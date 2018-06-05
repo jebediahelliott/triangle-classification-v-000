@@ -12,6 +12,6 @@ class Triangle
       :scalene
     elsif (self.side1 == self.side2 && self.side2 == self.side3)
       :equilateral
-
+    end
   end
 end
