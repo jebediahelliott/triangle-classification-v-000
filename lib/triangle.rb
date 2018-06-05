@@ -19,7 +19,7 @@ class Triangle
       false
     end
   end
-  
+
 
   def kind
     if self.side1 != self.side2 && self.side2 != self.side3 && self.side3 != self.side1
@@ -30,4 +30,6 @@ class Triangle
       :isosceles
     end
   end
+
+  
 end
