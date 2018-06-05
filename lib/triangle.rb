@@ -25,6 +25,7 @@ class Triangle
     elsif self.side1 == self.side2 && self.side2 == self.side3
       :equilateral
     elsif self.isosceles?
+      binding.pry
       :isosceles
     end
   end
