@@ -12,6 +12,18 @@ class Triangle
     end
   end
 
+  def triangle_inequality?
+    if self.side1 + self.side2 <= self.side3
+      true
+    elsif self.side1 + self.side3 <= self.side2
+      true
+    elsif self.side2 + self.side3 <= self.side1
+      true
+    else
+      false
+    end
+  end
+
   def isosceles?
     if self.side1 == self.side2 && self.side1 != self.side3
       true
