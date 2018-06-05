@@ -6,5 +6,12 @@ class Triangle
     @side2 = side2
     @side3 = side3
   end
-  
+
+  def kind
+    if (self.side1 != self.side2 != self.side3 != self.side1)
+      :scalene
+    elsif (self.side1 == self.side2 == self.side3)
+      :equilateral
+    
+  end
 end
