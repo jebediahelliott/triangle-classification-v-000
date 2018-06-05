@@ -23,7 +23,8 @@ class Triangle
       :scalene
     elsif self.side1 == self.side2 && self.side2 == self.side3
       :equilateral
-    elsif self.side1
+    elsif self.isosceles?
+      :isosceles
     end
   end
 end
