@@ -7,7 +7,7 @@ class Triangle
     @side2 = side2
     @side3 = side3
     @sides = [side1, side2, side3]
-    if self.sides.any? { |s| s <= 0 }
+    if self.sides.any? { |s| s <= 0 } || self.triangle_inequality?
       raise TriangleError
     end
   end
