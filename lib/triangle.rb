@@ -8,10 +8,11 @@ class Triangle
   end
 
   def kind
-    if (self.side1 != self.side2 && self.side2 != self.side3 && self.side3 != self.side1)
+    if self.side1 != self.side2 && self.side2 != self.side3 && self.side3 != self.side1
       :scalene
-    elsif (self.side1 == self.side2 && self.side2 == self.side3)
+    elsif self.side1 == self.side2 && self.side2 == self.side3
       :equilateral
+    elsif 
     end
   end
 end
