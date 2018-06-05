@@ -7,12 +7,23 @@ class Triangle
     @side3 = side3
   end
 
+  def isosceles?
+    if self.side1 == self.side2 && self.side1 != self.side3
+      true
+    elsif self.side1 == self.side3 && self.side1 != self.side2
+      true
+    elsif self.side2 == self.side3 && self.side2 != self.side1
+      true
+    else
+      false
+  end
+
   def kind
     if self.side1 != self.side2 && self.side2 != self.side3 && self.side3 != self.side1
       :scalene
     elsif self.side1 == self.side2 && self.side2 == self.side3
       :equilateral
-    elsif 
+    elsif self.side1
     end
   end
 end
